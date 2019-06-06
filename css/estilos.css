@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif; }
+
+.contenedor {
+  width: 90%;
+  max-width: 110rem;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  background-image: url("../img/lapescritorio1.jpg");
+  height: 100vh;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 60rem; }
+
+.menu {
+  text-align: right;
+  margin: 40px 0px; }
+  .menu a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #fffefe;
+    padding-bottom: 9px;
+    border: 2px solid transparen; }
+    .menu a:last-of-type {
+      margin-right: 0; }
+    .menu a:hover {
+      border-bottom: 2px solid #ffffff; }
+
+.contenedor-texto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 19rem 0; }
+  .contenedor-texto .texto {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 4rem; }
+    .contenedor-texto .texto h1,
+    .contenedor-texto .texto h2 {
+      margin: 0;
+      color: #fffefe;
+      font-weight: 300; }
+    .contenedor-texto .texto .empresa {
+      margin-bottom: 10px;
+      font-size: 5rem;
+      line-height: 5rem; }
+    .contenedor-texto .texto .ocupacion {
+      font-size: 2.5rem;
+      line-height: 2.5rem; }
+
+/*# sourceMappingURL=estilos.css.map */
