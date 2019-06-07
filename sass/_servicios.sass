@@ -1,0 +1,66 @@
+//                                    d8,         d8,
+//                                   `8P         `8P
+
+//  .d888b, d8888b  88bd88b?88   d8P  88b d8888b  88b d8888b  .d888b,
+//  ?8b,   d8b_,dP  88P'  `d88  d8P'  88Pd8P' `P  88Pd8P' ?88 ?8b,
+//    `?8b 88b     d88     ?8b ,88'  d88 88b     d88 88b  d88   `?8b
+// `?888P' `?888P'd88'     `?888P'  d88' `?888P'd88' `?8888P'`?888P'
+
+.imagen
+    height: 100vw
+    background-position: center center
+    background-size: cover
+    width: 19rem
+    height: 19rem
+    border-radius: 8px
+    margin-bottom: 4rem
+
+.servicios
+    background: rgba($color-servicios,.2)
+    min-height: 61rem
+    .contenedor
+        text-align: center
+        .padre
+            display: flex
+            justify-content: center
+            max-width: 110rem
+            align-content: space-between
+            padding-bottom: 6rem
+            .cuadro
+                border: 1px solid $color-marcos
+                border-radius: 8px
+                width: 32rem
+                background: $color-fondo
+                text-align: center
+                margin-left: 2rem
+                -webkit-box-shadow: 13px 13px 5px -7px rgba(0,0,0,0.2)
+                -moz-box-shadow: 13px 13px 5px -7px rgba(0,0,0,0.2)
+                box-shadow: 13px 13px 5px -7px rgba(0,0,0,0.2)
+                .contenido
+                    width: 19rem
+                    margin: 0 auto
+                    h3 
+                        font-size: 2.4rem
+                        font-weight: 300
+                        padding: 2rem 1.1rem
+                        line-height: 2rem
+                    #mantenimiento
+                        @extend .imagen
+                        background-image: url("../img/pc1.jpg")
+                    #remoto
+                        @extend .imagen
+                        background-image: url("../img/pc2.jpg")
+                    #reparacion
+                        @extend .imagen
+                        background-image: url("../img/pc3.jpg")
+            h4 
+                font-size: 1.4rem
+                font-weight: 300
+                padding-bottom: 1rem
+            ul
+                font-size: 1.2rem
+                font-weight: 600
+                text-align: left
+                padding-bottom: 2rem
+                padding-left: 3rem
+                list-style: none

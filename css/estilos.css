@@ -14,13 +14,18 @@ html {
 body {
   font-size: 1.6rem;
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .contenedor {
   width: 90%;
   max-width: 110rem;
   margin: auto;
   overflow: hidden; }
+
+h2 {
+  font-size: 3.4rem;
+  padding: 6rem 0;
+  font-weight: 300; }
 
 header {
   background-image: url("../img/lapescritorio1.jpg");
@@ -60,6 +65,7 @@ header {
     .contenedor-texto .texto h1,
     .contenedor-texto .texto h2 {
       margin: 0;
+      padding: 0;
       color: #fffefe;
       font-weight: 300; }
     .contenedor-texto .texto .empresa {
@@ -69,5 +75,161 @@ header {
     .contenedor-texto .texto .ocupacion {
       font-size: 2.5rem;
       line-height: 2.5rem; }
+
+main .contenedor {
+  overflow: visible; }
+main p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #5a5a5a;
+  padding-bottom: 6rem; }
+  main p span {
+    color: #0e79b0; }
+
+.acerca-de {
+  text-align: center; }
+
+.foto {
+  margin-top: -8rem; }
+  .foto img {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%; }
+
+.imagen, .servicios .contenedor .padre .cuadro .contenido #mantenimiento, .servicios .contenedor .padre .cuadro .contenido #remoto, .servicios .contenedor .padre .cuadro .contenido #reparacion {
+  height: 100vw;
+  background-position: center center;
+  background-size: cover;
+  width: 19rem;
+  height: 19rem;
+  border-radius: 8px;
+  margin-bottom: 4rem; }
+
+.servicios {
+  background: rgba(174, 183, 188, 0.2);
+  min-height: 61rem; }
+  .servicios .contenedor {
+    text-align: center; }
+    .servicios .contenedor .padre {
+      display: flex;
+      justify-content: center;
+      max-width: 110rem;
+      align-content: space-between;
+      padding-bottom: 6rem; }
+      .servicios .contenedor .padre .cuadro {
+        border: 1px solid #ababab;
+        border-radius: 8px;
+        width: 32rem;
+        background: #ffffff;
+        text-align: center;
+        margin-left: 2rem;
+        -webkit-box-shadow: 13px 13px 5px -7px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 13px 13px 5px -7px rgba(0, 0, 0, 0.2);
+        box-shadow: 13px 13px 5px -7px rgba(0, 0, 0, 0.2); }
+        .servicios .contenedor .padre .cuadro .contenido {
+          width: 19rem;
+          margin: 0 auto; }
+          .servicios .contenedor .padre .cuadro .contenido h3 {
+            font-size: 2.4rem;
+            font-weight: 300;
+            padding: 2rem 1.1rem;
+            line-height: 2rem; }
+          .servicios .contenedor .padre .cuadro .contenido #mantenimiento {
+            background-image: url("../img/pc1.jpg"); }
+          .servicios .contenedor .padre .cuadro .contenido #remoto {
+            background-image: url("../img/pc2.jpg"); }
+          .servicios .contenedor .padre .cuadro .contenido #reparacion {
+            background-image: url("../img/pc3.jpg"); }
+      .servicios .contenedor .padre h4 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding-bottom: 1rem; }
+      .servicios .contenedor .padre ul {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        list-style: none; }
+
+.sombra, footer .contacto .contenedor .formulario input[type="text"],
+footer .contacto .contenedor .formulario input[type="email"],
+footer .contacto .contenedor .formulario input[type="submit"],
+footer .contacto .contenedor .formulario textarea {
+  -webkit-box-shadow: 13px 13px 5px -7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 13px 13px 5px -7px rgba(0, 0, 0, 0.2);
+  box-shadow: 13px 13px 5px -7px rgba(0, 0, 0, 0.2); }
+
+footer .contacto {
+  text-align: center; }
+  footer .contacto .contenedor {
+    padding-bottom: 6rem; }
+    footer .contacto .contenedor .formulario {
+      width: 66rem;
+      margin: 0 auto; }
+      footer .contacto .contenedor .formulario input::placeholder {
+        color: #181513; }
+      footer .contacto .contenedor .formulario textarea::placeholder {
+        color: #181513; }
+      footer .contacto .contenedor .formulario input[type="text"],
+      footer .contacto .contenedor .formulario input[type="email"] {
+        padding-left: 2rem; }
+      footer .contacto .contenedor .formulario textarea {
+        padding: 2rem; }
+      footer .contacto .contenedor .formulario input[type="text"],
+      footer .contacto .contenedor .formulario input[type="email"],
+      footer .contacto .contenedor .formulario input[type="submit"],
+      footer .contacto .contenedor .formulario textarea {
+        border: 0.1rem solid #ababab;
+        border-radius: 0.8rem; }
+      footer .contacto .contenedor .formulario input[type="text"],
+      footer .contacto .contenedor .formulario input[type="email"] {
+        width: 30rem;
+        height: 5rem;
+        margin-right: 2rem; }
+      footer .contacto .contenedor .formulario input[type="email"] {
+        margin: 0; }
+      footer .contacto .contenedor .formulario textarea {
+        margin: 2rem auto;
+        width: 62rem;
+        height: 20rem; }
+      footer .contacto .contenedor .formulario input[type="submit"] {
+        height: 5rem;
+        width: 15rem;
+        background: #3f3732;
+        border-width: 0;
+        color: #ffffff;
+        cursor: pointer; }
+        footer .contacto .contenedor .formulario input[type="submit"]:hover {
+          background: #181513; }
+
+.redes, footer .redes-sociales .contenedor a {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-right: 2rem;
+  padding: 2.5rem 4.5rem;
+  border-radius: 0.8rem;
+  display: inline-block;
+  margin-bottom: 1rem; }
+
+footer .redes-sociales {
+  background-color: #3f3732;
+  height: 18rem;
+  text-align: center;
+  display: flex;
+  align-items: center; }
+  footer .redes-sociales .contenedor a:last-of-type {
+    margin-right: 0; }
+  footer .redes-sociales .contenedor .twitter:hover {
+    background-color: #55acee; }
+  footer .redes-sociales .contenedor .youtube:hover {
+    background-color: #cd201f; }
+  footer .redes-sociales .contenedor .facebook:hover {
+    background-color: #3b5998; }
+  footer .redes-sociales .contenedor .instagram:hover {
+    background-color: #3f729b; }
+  footer .redes-sociales .contenedor p {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 300; }
 
 /*# sourceMappingURL=estilos.css.map */

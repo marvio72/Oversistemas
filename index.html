@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,600i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <script defer src="js/all.min.js"></script>
     <title>Oversistemas</title>
@@ -29,9 +30,11 @@
     <main>
         <section class="acerca-de">
             <div class="contenedor">
-                <img src="img/Ing. Marco Ruvalcaba.jpg" alt="Foto Ing. Marco Ruvalcaba">
+                <div class="foto">
+                    <img src="img/Ing. Marco Ruvalcaba.jpg" alt="Foto Ing. Marco Ruvalcaba">
+                </div>
                 <h2>Acerca de</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis architecto saepe ducimus libero error nam in, praesentium maiores modi amet magnam deserunt ullam molestias maxime? Accusantium ab sunt corrupti nihil vero atque, odit, officiis fugit eum sequi nisi qui illum sed optio in cumque quisquam cum facilis aliquid voluptatibus?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Facilis officiis</span> architecto saepe ducimus libero error nam in, praesentium maiores modi amet magnam deserunt ullam molestias maxime? Accusantium ab sunt corrupti nihil vero atque, odit, officiis fugit eum sequi nisi qui illum sed optio in <span>cumque quisquam cum</span> facilis aliquid voluptatibus?</p>
             </div><!--fin .contenedor-->
         </section>
         <section class="servicios">
@@ -41,39 +44,46 @@
                     <div class="cuadro">
                         <div class="contenido">
                             <h3>Mantenimiento preventivo</h3>
-                            <img src="img/pc1.jpg" alt="pc1">
+                            <div id="mantenimiento">
+                            </div>
                         </div><!--fin .contenido-->
                         <h4>Este servicio consiste en</h4>
                         <ul>
-                            <li>Limpieza de los componentes internos cpu</li>
-                            <li>Lubricación de Ventiladores</li>
-                            <li>Limpieza externa de gabinete</li>
+                            <li><i class="far fa-check-circle"></i> Limpieza de los componentes internos cpu</li>
+                            <li><i class="far fa-check-circle"></i> Lubricación de Ventiladores</li>
+                            <li><i class="far fa-check-circle"></i> Limpieza externa de gabinete</li>
                         </ul>
                     </div><!--fin .cuadro-->
                     <div class="cuadro">
                         <div class="contenido">
-                            <h3>Servicio Remoto</h3>
-                        </div><!--fin .contenido-->
+                            <h3>Servicio remoto</h3>
+                            <div id="remoto">
+                            </div>
+                        </div>
+                        <!--fin .contenido-->
                         <h4>Este servicio consiste en</h4>
                         <ul>
-                            <li>Problemas con software</li>
-                            <li>Asistencia para intalación de Software</li>
-                            <li>Conexión a Internet indispensable</li>
+                            <li><i class="far fa-check-circle"></i> Problemas con software</li>
+                            <li><i class="far fa-check-circle"></i> Asistencia para intalación de Software</li>
+                            <li><i class="far fa-check-circle"></i> Conexión a Internet indispensable</li>
                         </ul>
                     </div>
                     <!--fin .cuadro-->
                     <div class="cuadro">
                         <div class="contenido">
-                            <h3>Reparación de Equipo</h3>
+                            <h3>Reparación de equipo</h3>
+                            <div id="reparacion">
+                            </div>
                         </div>
                         <!--fin .contenido-->
-                    </div><!--fin .cuadro-->
-                    h4>Este servicio consiste en</h4>
-                    <ul>
-                        <li>Identificación de la falla del equipo</li>
-                        <li>Presupuesto para la reparación del equipo</li>
-                        <li>Presupuesto de partes</li>
-                    </ul>
+                        <h4>Este servicio consiste en</h4>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Identificación de la falla del equipo</li>
+                            <li><i class="far fa-check-circle"></i> Presupuesto para la reparación del equipo</li>
+                            <li><i class="far fa-check-circle"></i> Presupuesto de partes</li>
+                        </ul>
+                    </div>
+                    <!--fin .cuadro-->
                 </div><!--fin .padre-->
             </div><!--fin .contenedor-->
         </section>
@@ -93,14 +103,15 @@
             </div><!--fin .contenedor-->
         </section>
     
-        <secction class="redes-sociales">
+        <section class="redes-sociales">
             <div class="contenedor">
                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <p>Creado por Oversistemas &copy;2005</p>
             </div><!--fin .contenedor-->
-        </secction>
+        </section>
     </footer>
 
 

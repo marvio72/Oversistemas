@@ -1,0 +1,59 @@
+//                             d8P                      d8P
+//                          d888888P                 d888888P
+//  d8888b d8888b   88bd88b   ?88'   d888b8b   d8888b  ?88'   d8888b
+// d8P' `Pd8P' ?88  88P' ?8b  88P   d8P' ?88  d8P' `P  88P   d8P' ?88
+// 88b    88b  d88 d88   88P  88b   88b  ,88b 88b      88b   88b  d88
+// `?888P'`?8888P'd88'   88b  `?8b  `?88P'`88b`?888P'  `?8b  `?8888P'
+
+@mixin placeholder($espacio,$color)    
+    input::placeholder
+        color : $color
+    textarea::placeholder
+        color  : $color
+    input[type="text"],
+    input[type="email"],
+        padding-left: $espacio
+    textarea
+        padding: $espacio
+
+.sombra
+    -webkit-box-shadow: 13px 13px 5px -7px rgba(0,0,0,0.2)
+    -moz-box-shadow: 13px 13px 5px -7px rgba(0,0,0,0.2)
+    box-shadow: 13px 13px 5px -7px rgba(0,0,0,0.2)
+
+footer
+    .contacto
+        text-align: center
+        .contenedor
+            padding-bottom: 6rem
+            .formulario
+                width: 66rem
+                margin: 0 auto
+                @include placeholder(2rem,$color-difuminado)
+                input[type="text"],
+                input[type="email"],
+                input[type="submit"],
+                textarea
+                    border: .1rem solid $color-marcos
+                    border-radius: .8rem
+                    @extend .sombra
+                input[type="text"],
+                input[type="email"]
+                    width: 30rem
+                    height: 5rem
+                    margin-right: 2rem
+                input[type="email"]
+                    margin: 0
+                textarea
+                    margin: 2rem auto
+                    width: 62rem
+                    height: 20rem
+                input[type="submit"]
+                    height: 5rem
+                    width: 15rem
+                    background: $color-footer
+                    border-width: 0
+                    color: $color-fondo
+                    cursor: pointer
+                    &:hover
+                        background: $color-difuminado

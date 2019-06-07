@@ -1,0 +1,47 @@
+//                       d8b
+//                       88P
+//                      d88
+//   88bd88b d8888b d888888   d8888b .d888b,
+//   88P'  `d8b_,dPd8P' ?88  d8b_,dP ?8b,
+//  d88     88b    88b  ,88b 88b       `?8b
+// d88'     `?888P'`?88P'`88b`?888P'`?888P'
+
+.redes
+    font-size: 3rem
+    color: $color-redes
+    margin-right: 2rem
+    padding: 2.5rem 4.5rem
+    border-radius: .8rem
+    display: inline-block
+    margin-bottom: 1rem
+
+footer 
+    .redes-sociales
+        background-color: $color-footer
+        height: 18rem
+        text-align: center
+        display: flex
+        align-items: center
+        .contenedor
+            a
+                @extend .redes
+                &:last-of-type
+                    margin-right: 0
+            .twitter
+                &:hover
+                    background-color: $color-twitter
+            .youtube
+                &:hover
+                    background-color: $color-youtube
+            .facebook
+                &:hover
+                    background-color: $color-facebook
+            .instagram
+                &:hover
+                    background-color: $color-instagram
+            p 
+                color: $color-redes
+                font-size: 1.8rem
+                font-weight: 300
+                
+
