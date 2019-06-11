@@ -70,11 +70,19 @@ header {
       font-weight: 300; }
     .contenedor-texto .texto .empresa {
       margin-bottom: 10px;
-      font-size: 5rem;
-      line-height: 5rem; }
-    .contenedor-texto .texto .ocupacion {
-      font-size: 2.5rem;
+      font-size: 3rem;
       line-height: 2.5rem; }
+    .contenedor-texto .texto .ocupacion {
+      font-size: 1.5rem;
+      line-height: 1.25rem; }
+    @media only screen and (min-width: 768px) {
+      .contenedor-texto .texto .empresa {
+        margin-bottom: 10px;
+        font-size: 5rem;
+        line-height: 5rem; }
+      .contenedor-texto .texto .ocupacion {
+        font-size: 2.5rem;
+        line-height: 2.5rem; } }
 
 main .contenedor {
   overflow: visible; }
@@ -118,7 +126,8 @@ main p {
       .servicios .contenedor .padre .cuadro {
         border: 1px solid #ababab;
         border-radius: 8px;
-        width: 32rem;
+        max-width: 32rem;
+        min-width: 32rem;
         background: #ffffff;
         text-align: center;
         margin-left: 2rem;
@@ -144,7 +153,7 @@ main p {
         font-weight: 300;
         padding-bottom: 1rem; }
       .servicios .contenedor .padre ul {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
         text-align: left;
         padding-bottom: 2rem;
@@ -164,7 +173,7 @@ footer .contacto {
   footer .contacto .contenedor {
     padding-bottom: 6rem; }
     footer .contacto .contenedor .formulario {
-      width: 66rem;
+      width: 30rem;
       margin: 0 auto; }
       footer .contacto .contenedor .formulario input::placeholder {
         color: #181513; }
@@ -186,11 +195,13 @@ footer .contacto {
         width: 30rem;
         height: 5rem;
         margin-right: 2rem; }
+      footer .contacto .contenedor .formulario input[type="text"] {
+        margin-bottom: 20px; }
       footer .contacto .contenedor .formulario input[type="email"] {
         margin: 0; }
       footer .contacto .contenedor .formulario textarea {
         margin: 2rem auto;
-        width: 62rem;
+        width: 30rem;
         height: 20rem; }
       footer .contacto .contenedor .formulario input[type="submit"] {
         height: 5rem;
@@ -201,12 +212,19 @@ footer .contacto {
         cursor: pointer; }
         footer .contacto .contenedor .formulario input[type="submit"]:hover {
           background: #181513; }
+    @media only screen and (min-width: 768px) {
+      footer .contacto .contenedor .formulario {
+        width: 66rem; }
+        footer .contacto .contenedor .formulario input[type="text"] {
+          margin-bottom: 0px; }
+        footer .contacto .contenedor .formulario textarea {
+          width: 62rem; } }
 
 .redes, footer .redes-sociales .contenedor a {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #ffffff;
-  margin-right: 2rem;
-  padding: 2.5rem 4.5rem;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
   border-radius: 0.8rem;
   display: inline-block;
   margin-bottom: 1rem; }
@@ -229,7 +247,14 @@ footer .redes-sociales {
     background-color: #3f729b; }
   footer .redes-sociales .contenedor p {
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    footer .redes-sociales .contenedor .redes, footer .redes-sociales .contenedor a {
+      font-size: 3rem;
+      margin-right: 2rem;
+      padding: 2.5rem 4.5rem; }
+    footer .redes-sociales .contenedor p {
+      font-size: 1.8rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -6,11 +6,12 @@
 //  d88     88b    88b  ,88b 88b       `?8b
 // d88'     `?888P'`?88P'`88b`?888P'`?888P'
 
+
 .redes
-    font-size: 3rem
+    font-size: 1.5rem
     color: $color-redes
-    margin-right: 2rem
-    padding: 2.5rem 4.5rem
+    margin-right: 1rem
+    padding: 1rem 2rem
     border-radius: .8rem
     display: inline-block
     margin-bottom: 1rem
@@ -41,7 +42,12 @@ footer
                     background-color: $color-instagram
             p 
                 color: $color-redes
-                font-size: 1.8rem
+                font-size: 1.2rem
                 font-weight: 300
-                
-
+            @media only screen and (min-width: 768px)
+                .redes
+                    font-size: 3rem
+                    margin-right: 2rem
+                    padding: 2.5rem 4.5rem
+                p 
+                    font-size: 1.8rem
